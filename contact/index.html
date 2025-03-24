@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TitanNodes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-section {
+            padding: 80px 0;
+            background-color: var(--bg-primary);
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .contact-method {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+            background-color: var(--card-hover);
+            border-color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(124, 77, 255, 0.2);
+        }
+        
+        .contact-method i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .contact-method h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+        
+        .contact-method p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        
+        .contact-method .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .discord-redirect {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .discord-redirect h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .discord-redirect p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+        
+        .discord-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background-color: #5865F2;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .discord-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(88, 101, 242, 0.4);
+        }
+        
+        .discord-btn i {
+            font-size: 1.5rem;
+        }
+        
+        .contact-info {
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TitanNodes</h1>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="https://billing.titannodes.site/" class="btn btn-primary">Client Area</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs-container">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Our Support Team</h1>
+            <p>We're here to help with any questions or issues you might have. Our support team is available 24/7.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fab fa-discord"></i>
+                    <h3>Discord Support</h3>
+                    <p>Join our Discord community for the fastest support and to connect with other users.</p>
+                    <a href="https://discord.gg/titannodes" class="btn btn-primary">
+                        <i class="fab fa-discord"></i>
+                        Join Discord
+                    </a>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-ticket-alt"></i>
+                    <h3>Support Tickets</h3>
+                    <p>Create a support ticket in our client area for technical assistance.</p>
+                    <a href="https://billing.titannodes.site/" class="btn btn-primary">
+                        <i class="fas fa-ticket-alt"></i>
+                        Open Ticket
+                    </a>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-book"></i>
+                    <h3>Knowledge Base</h3>
+                    <p>Find answers to common questions in our comprehensive knowledge base.</p>
+                    <a href="knowledge-base.html" class="btn btn-primary">
+                        <i class="fas fa-book"></i>
+                        Browse Articles
+                    </a>
+                </div>
+            </div>
+            
+            <div class="discord-redirect">
+                <h3>Connect with Us on Discord</h3>
+                <p>Our Discord server is the fastest way to get support, connect with our community, and stay updated on the latest news and announcements.</p>
+                <a href="https://discord.gg/titannodes" class="discord-btn">
+                    <i class="fab fa-discord"></i>
+                    Join Our Discord Server
+                </a>
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Us</h3>
+                    <p>Discord: <a href="https://discord.gg/titannodes">discord.gg/titannodes</a></p>
+                    <p>Client Area: <a href="https://billing.titannodes.site/">billing.titannodes.site</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Your Minecraft Server?</h2>
+            <p>Join thousands of satisfied customers and experience premium Minecraft hosting today.</p>
+            <a href="https://billing.titannodes.site/" class="btn btn-primary">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TitanNodes</h3>
+                    <p>Premium Minecraft server hosting with unbeatable performance and support.</p>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/titannodes"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="https://discord.gg/titannodes">Discord Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="tos/index.html">Terms of Service</a></li>
+                        <li><a href="privacy/index.html">Privacy Policy</a></li>
+                        <li><a href="refund/index.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TitanNodes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="cookie-banner">
+        <div class="cookie-text">
+            <h4>We use cookies</h4>
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        </div>
+        <button class="accept-cookies">Accept Cookies</button>
+    </div>
+
+    <script src="components.js"></script>
+</body>
+</html>
