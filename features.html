@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - TitanNodes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .feature-showcase {
+            padding: 80px 0;
+            background-color: var(--bg-primary);
+        }
+        
+        .feature-showcase-item {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 100px;
+        }
+        
+        .feature-showcase-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .feature-showcase-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .feature-showcase-content {
+            flex: 1;
+        }
+        
+        .feature-showcase-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        
+        .feature-showcase-content p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .feature-showcase-content ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+        
+        .feature-showcase-content ul li {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .feature-showcase-content ul li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .feature-showcase-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature-showcase-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        @media (max-width: 992px) {
+            .feature-showcase-item,
+            .feature-showcase-item:nth-child(even) {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .feature-showcase-content,
+            .feature-showcase-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>TitanNodes</h1>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html" class="active">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://billing.titannodes.site/" class="btn btn-primary">Client Area</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs-container">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li>Features</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Powerful Features for Your Minecraft Server</h1>
+            <p>Discover all the tools and capabilities that make TitanNodes the perfect choice for your Minecraft hosting needs.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-server"></i>
+                    <h3>High Performance</h3>
+                    <p>Powered by latest-gen AMD Ryzen and Intel processors with NVMe SSDs for lightning-fast performance.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>DDoS Protection</h3>
+                    <p>Enterprise-grade protection against DDoS attacks to keep your server online.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our expert team is available around the clock to help with any issues.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Instant Setup</h3>
+                    <p>Get your Minecraft server up and running in less than 60 seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Network</h3>
+                    <p>Servers located worldwide to ensure low latency for your players.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Easy Management</h3>
+                    <p>User-friendly control panel for effortless server management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-showcase">
+        <div class="container">
+            <div class="feature-showcase-item">
+                <div class="feature-showcase-content">
+                    <h3>Advanced Control Panel</h3>
+                    <p>Our intuitive control panel gives you complete control over your Minecraft server with just a few clicks. No technical knowledge required.</p>
+                    <ul>
+                        <li>One-click mod and plugin installation</li>
+                        <li>Easy server configuration</li>
+                        <li>Real-time performance monitoring</li>
+                        <li>Player management tools</li>
+                        <li>Automated backup system</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">Choose a Plan</a>
+                </div>
+                <div class="feature-showcase-image">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Control Panel Interface">
+                </div>
+            </div>
+            
+            <div class="feature-showcase-item">
+                <div class="feature-showcase-content">
+                    <h3>Modpack Support</h3>
+                    <p>Install popular modpacks with just one click. We support all major modpacks and provide automatic updates.</p>
+                    <ul>
+                        <li>FTB, Tekkit, and other popular modpacks</li>
+                        <li>Custom mod installation</li>
+                        <li>Automatic mod updates</li>
+                        <li>Version switching</li>
+                        <li>Mod conflict resolution</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">Choose a Plan</a>
+                </div>
+                <div class="feature-showcase-image">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Modpack Installation">
+                </div>
+            </div>
+            
+            <div class="feature-showcase-item">
+                <div class="feature-showcase-content">
+                    <h3>Advanced Security</h3>
+                    <p>Keep your server and players safe with our comprehensive security features.</p>
+                    <ul>
+                        <li>Enterprise-grade DDoS protection</li>
+                        <li>Automatic firewall configuration</li>
+                        <li>Regular security updates</li>
+                        <li>IP whitelisting</li>
+                        <li>Secure authentication</li>
+                    </ul>
+                    <a href="pricing.html" class="btn btn-primary">Choose a Plan</a>
+                </div>
+                <div class="feature-showcase-image">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Security Features">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">TitanNodes by the Numbers</h2>
+            <div class="stats-grid">
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="counter-value" data-target="1500">0</div>
+                    <div class="counter-label">Servers Hosted</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter-value" data-target="10000">0</div>
+                    <div class="counter-label">Happy Customers</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="counter-value" data-target="99.9">0</div>
+                    <div class="counter-label">Uptime Percentage</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="counter-value" data-target="24">0</div>
+                    <div class="counter-label">Hours Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Experience These Features?</h2>
+            <p>Start your Minecraft server today and see the TitanNodes difference.</p>
+            <a href="https://billing.titannodes.site/" class="btn btn-primary">Get Started Now</a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Need Help with Our Features?</h2>
+            <p>Join our Discord community for support and to connect with other users.</p>
+            <a href="https://discord.gg/titannodes" class="btn btn-primary">
+                <i class="fab fa-discord"></i> Join Our Discord
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>TitanNodes</h3>
+                    <p>Premium Minecraft server hosting with unbeatable performance and support.</p>
+                    <div class="social-icons">
+                        <a href="https://discord.gg/titannodes"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="#">Server Status</a></li>
+                        <li><a href="https://discord.gg/titannodes">Discord Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="tos/index.html">Terms of Service</a></li>
+                        <li><a href="privacy/index.html">Privacy Policy</a></li>
+                        <li><a href="refund/index.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TitanNodes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="cookie-banner">
+        <div class="cookie-text">
+            <h4>We use cookies</h4>
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        </div>
+        <button class="accept-cookies">Accept Cookies</button>
+    </div>
+
+    <script src="components.js"></script>
+</body>
+</html>
+

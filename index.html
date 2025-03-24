@@ -25,6 +25,9 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#plans">Plans</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li><a href="https://billing.titannodes.site/" class="btn btn-primary">Get Started</a></li>
                 </ul>
             </nav>
@@ -32,6 +35,7 @@
     </header>
 
     <section id="home" class="hero">
+        <canvas id="particles-canvas"></canvas>
         <div class="container">
             <div class="hero-content">
                 <h1>Premium Minecraft Server Hosting</h1>
@@ -85,6 +89,46 @@
         </div>
     </section>
 
+    <section class="server-status-section">
+        <div class="container">
+            <h2 class="section-title">Server Status</h2>
+            <div class="server-status-grid">
+                <div class="server-status-card">
+                    <h3>US East</h3>
+                    <p>New York, USA</p>
+                    <div class="server-status status-up" data-region="us-east">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Operational</span>
+                    </div>
+                </div>
+                <div class="server-status-card">
+                    <h3>US West</h3>
+                    <p>Los Angeles, USA</p>
+                    <div class="server-status status-up" data-region="us-west">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Operational</span>
+                    </div>
+                </div>
+                <div class="server-status-card">
+                    <h3>EU Central</h3>
+                    <p>Frankfurt, Germany</p>
+                    <div class="server-status status-up" data-region="eu-central">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Operational</span>
+                    </div>
+                </div>
+                <div class="server-status-card">
+                    <h3>Asia Pacific</h3>
+                    <p>Singapore</p>
+                    <div class="server-status status-up" data-region="ap-south">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Operational</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="plans" class="plans">
         <div class="container">
             <h2 class="section-title">Our Hosting Plans</h2>
@@ -110,6 +154,7 @@
                         <li>1v Cpu</li>
                         <li>6GB SSD Storage</li>
                         <li>1 Server</li>
+                        <li>Standard Support</li>
                     </ul>
                     <a href="https://discord.gg/titannodes" class="btn btn-primary">Get Started</a>
                 </div>
@@ -122,6 +167,7 @@
                         <li>1.5V Cpu</li>
                         <li>10GB SSD Storage</li>
                         <li>1 Servers</li>
+                        <li>Priority Support</li>
                     </ul>
                     <a href="https://discord.gg/titannodes" class="btn btn-primary">Get Started</a>
                 </div>
@@ -133,8 +179,111 @@
                         <li>2v Cpu</li>
                         <li>16GB SSD Storage</li>
                         <li>1 Servers</li>
+                        <li>Premium Support</li>
                     </ul>
                     <a href="https://discord.gg/titannodes" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+            
+            <div class="plan-comparison">
+                <h3 class="section-title" style="font-size: 1.8rem;">Plan Comparison</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Free</th>
+                            <th>Starter</th>
+                            <th>Premium</th>
+                            <th>Ultimate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="feature-name">Custom Domain</td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Mod Support</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Plugin Support</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Backup System</td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">DDoS Protection</td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">24/7 Support</td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="feature-name">Server Transfer</td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-times times"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                            <td><i class="fas fa-check check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Our Numbers Speak</h2>
+            <div class="stats-grid">
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="counter-value" data-target="1500">0</div>
+                    <div class="counter-label">Servers Hosted</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="counter-value" data-target="10000">0</div>
+                    <div class="counter-label">Happy Customers</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="counter-value" data-target="99.9">0</div>
+                    <div class="counter-label">Uptime Percentage</div>
+                </div>
+                <div class="counter-box">
+                    <div class="counter-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="counter-value" data-target="24">0</div>
+                    <div class="counter-label">Hours Support</div>
                 </div>
             </div>
         </div>
@@ -145,6 +294,49 @@
             <h2>Ready to Start Your Minecraft Server?</h2>
             <p>Join thousands of satisfied customers and experience premium Minecraft hosting today.</p>
             <a href="https://billing.titannodes.site/" class="btn btn-primary">Get Started Now</a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial-item">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                        <p>"TitanNodes has been a game-changer for our Minecraft community. The performance is outstanding, and their support team is always quick to respond."</p>
+                        <h4>Michael Johnson</h4>
+                        <div class="client-role">Server Owner, MC Adventures</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                        <p>"I've tried several hosting providers, but TitanNodes offers the best value for money. The server runs smoothly even with 50+ players online."</p>
+                        <h4>Sarah Williams</h4>
+                        <div class="client-role">Community Manager, CraftWorld</div>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Customer">
+                        <p>"Setting up mods was a breeze with TitanNodes. Their one-click installer saved me hours of configuration time. Highly recommended!"</p>
+                        <h4>David Chen</h4>
+                        <div class="client-role">Modpack Creator</div>
+                    </div>
+                </div>
+                <div class="slider-arrows">
+                    <div class="slider-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slider-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dots">
+                        <div class="slider-dot active"></div>
+                        <div class="slider-dot"></div>
+                        <div class="slider-dot"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -175,6 +367,70 @@
         </div>
     </section>
 
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How do I get started with TitanNodes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Getting started is simple! Just select a plan that suits your needs, complete the registration process, and your Minecraft server will be set up automatically within minutes. Our user-friendly control panel makes it easy to manage your server settings, install mods, and invite players.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I install custom mods and plugins?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our plans support custom mods and plugins. You can easily upload and install them through our control panel, or use our one-click installer for popular modpacks like FTB, Tekkit, and more. If you need help with installation, our support team is always ready to assist.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How many players can my server support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The number of players your server can support depends on the plan you choose and the mods/plugins you install. As a general guideline: Free plan supports 5-10 players, Starter plan supports 10-20 players, Premium plan supports 20-40 players, and Ultimate plan supports 40-60 players. For larger communities, please contact us for custom solutions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I upgrade my plan later?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can upgrade your plan at any time through your client area. The upgrade process is seamless and doesn't cause any downtime for your server. We'll automatically transfer all your data and settings to the new plan. You'll only be charged the prorated difference between your current plan and the new one.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept various payment methods including credit/debit cards (Visa, MasterCard, American Express), PayPal, and cryptocurrency (Bitcoin, Ethereum). All transactions are secure and encrypted. We offer monthly billing with the option to save by paying quarterly or annually.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest news, updates, and special offers.</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -182,7 +438,7 @@
                     <h3>TitanNodes</h3>
                     <p>Premium Minecraft server hosting with unbeatable performance and support.</p>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="https://discord.gg/titannodes"><i class="fab fa-discord"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -195,23 +451,25 @@
                         <li><a href="#plans">Plans</a></li>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="features.html">All Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Support</h4>
                     <ul>
-                        <li><a href="#">Knowledge Base</a></li>
-                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="knowledge-base.html">Knowledge Base</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
                         <li><a href="#">Server Status</a></li>
-                        <li><a href="#">Discord Community</a></li>
+                        <li><a href="https://discord.gg/titannodes">Discord Community</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="https://www.titannodes.site/tos">Terms of Service</a></li>
+                        <li><a href="https://www.titannodes.site/privacy">Privacy Policy</a></li>
+                        <li><a href="https://www.titannodes.site/refund">Refund Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -221,6 +479,20 @@
         </div>
     </footer>
 
+    <div id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="cookie-banner">
+        <div class="cookie-text">
+            <h4>We use cookies</h4>
+            <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        </div>
+        <button class="accept-cookies">Accept Cookies</button>
+    </div>
+
+    <script src="particles.js"></script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
+
